@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="GrabiPelis" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="4zN-PW-2H9" id="vbL-L7-wae"/>
+                <outlet property="tabBar" destination="mLE-ES-VUd" id="iGB-h8-ECd"/>
+                <outlet property="tableView" destination="KDn-nd-RY2" id="EhQ-lY-vOE"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Yt1-WF-y8F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KDn-nd-RY2">
+                    <rect key="frame" x="0.0" y="120" width="375" height="498"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-ES-VUd">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <tabBarItem systemItem="mostViewed" id="eCf-ix-oZh" userLabel="Popular"/>
+                        <tabBarItem systemItem="topRated" id="Wyf-oe-DcD"/>
+                        <tabBarItem systemItem="mostRecent" id="G9x-eQ-s09"/>
+                    </items>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="selectedIndex">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </tabBar>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="4zN-PW-2H9">
+                    <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mLE-ES-VUd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="5ag-51-1ex"/>
+                <constraint firstItem="KDn-nd-RY2" firstAttribute="top" secondItem="4zN-PW-2H9" secondAttribute="bottom" id="KWN-ke-F7E"/>
+                <constraint firstItem="mLE-ES-VUd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="LWJ-sG-rSZ"/>
+                <constraint firstItem="mLE-ES-VUd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="QNb-2Q-2yJ"/>
+                <constraint firstItem="4zN-PW-2H9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="RQs-WQ-kK5"/>
+                <constraint firstItem="KDn-nd-RY2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="UeX-PX-2SL"/>
+                <constraint firstItem="mLE-ES-VUd" firstAttribute="top" secondItem="KDn-nd-RY2" secondAttribute="bottom" id="Y0g-Mq-If7"/>
+                <constraint firstItem="4zN-PW-2H9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="baC-50-yw5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KDn-nd-RY2" secondAttribute="trailing" id="grO-vI-3FV"/>
+                <constraint firstItem="4zN-PW-2H9" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="z6H-sL-8DA"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="35.5" y="416.5"/>
+        </view>
+    </objects>
+</document>

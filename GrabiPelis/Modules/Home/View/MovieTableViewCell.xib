@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="MovieTableViewCell" customModule="GrabiPelis" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tof-ZA-6lZ">
+                    <rect key="frame" x="8" y="8" width="94.5" height="126"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Tof-ZA-6lZ" secondAttribute="height" multiplier="3:4" id="HsO-0W-6Xi"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Title label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wap-Vv-BoW">
+                    <rect key="frame" x="110.5" y="8" width="330.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2013 Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRA-Sd-Kaz">
+                    <rect key="frame" x="110.5" y="40.5" width="79" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyL-Ng-ysP">
+                    <rect key="frame" x="110.5" y="106.5" width="47" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHm-3c-Hsk">
+                    <rect key="frame" x="110.5" y="73.5" width="49" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Tof-ZA-6lZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="1hd-rx-I5W"/>
+                <constraint firstAttribute="bottom" secondItem="Tof-ZA-6lZ" secondAttribute="bottom" constant="8" id="3oM-3d-xe5"/>
+                <constraint firstItem="HRA-Sd-Kaz" firstAttribute="leading" secondItem="wap-Vv-BoW" secondAttribute="leading" id="IiJ-as-IJm"/>
+                <constraint firstAttribute="trailing" secondItem="wap-Vv-BoW" secondAttribute="trailing" constant="8" id="Jti-CJ-O0Z"/>
+                <constraint firstItem="HRA-Sd-Kaz" firstAttribute="top" secondItem="wap-Vv-BoW" secondAttribute="bottom" constant="12" id="Roa-dD-H1H"/>
+                <constraint firstItem="hHm-3c-Hsk" firstAttribute="top" secondItem="HRA-Sd-Kaz" secondAttribute="bottom" constant="12" id="SO2-va-joW"/>
+                <constraint firstItem="UyL-Ng-ysP" firstAttribute="top" secondItem="hHm-3c-Hsk" secondAttribute="bottom" constant="12" id="btL-4U-h6i"/>
+                <constraint firstItem="wap-Vv-BoW" firstAttribute="top" secondItem="Tof-ZA-6lZ" secondAttribute="top" id="bxz-wp-vUK"/>
+                <constraint firstItem="hHm-3c-Hsk" firstAttribute="leading" secondItem="wap-Vv-BoW" secondAttribute="leading" id="dxp-9l-8y3"/>
+                <constraint firstItem="Tof-ZA-6lZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="jBo-xv-ZrG"/>
+                <constraint firstItem="UyL-Ng-ysP" firstAttribute="leading" secondItem="wap-Vv-BoW" secondAttribute="leading" id="sfx-0M-SYd"/>
+                <constraint firstItem="wap-Vv-BoW" firstAttribute="leading" secondItem="Tof-ZA-6lZ" secondAttribute="trailing" constant="8" id="sok-3D-yLH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="HRA-Sd-Kaz" id="lOo-2o-xr7"/>
+                <outlet property="genreLabel" destination="UyL-Ng-ysP" id="YYu-kl-fcf"/>
+                <outlet property="posterImageView" destination="Tof-ZA-6lZ" id="Gqy-4V-XuO"/>
+                <outlet property="ratingLabel" destination="hHm-3c-Hsk" id="ZpR-AF-BsJ"/>
+                <outlet property="titleLabel" destination="wap-Vv-BoW" id="abF-Pa-IRR"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-110"/>
+        </view>
+    </objects>
+</document>

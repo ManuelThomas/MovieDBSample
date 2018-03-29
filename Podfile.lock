@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (4.7.0)
+  - Differentiator (3.0.2)
+  - Kingfisher (4.6.4)
+  - ModelMapper (7.4.1)
+  - Moya (11.0.1):
+    - Moya/Core (= 11.0.1)
+  - Moya-ModelMapper/Core (7.0.0):
+    - ModelMapper
+    - Moya (~> 11.0)
+  - Moya-ModelMapper/RxSwift (7.0.0):
+    - Moya-ModelMapper/Core
+    - Moya/RxSwift (~> 11.0)
+    - RxSwift
+  - Moya/Core (11.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Moya/RxSwift (11.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - Result (3.2.4)
+  - RxCocoa (4.1.2):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxOptional (3.3.0):
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.1.2)
+  - SnapKit (4.0.0)
+  - SVProgressHUD (2.2.5)
+  - Then (2.3.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 4.0)
+  - Moya
+  - Moya-ModelMapper/RxSwift (= 7.0.0)
+  - Moya/RxSwift
+  - R.swift
+  - RxCocoa
+  - RxDataSources (~> 3.0)
+  - RxOptional
+  - RxSwift
+  - SnapKit
+  - SVProgressHUD
+  - Then
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+  ModelMapper: e576b4e32007bf574d0f9e4f533d29c46d29f146
+  Moya: 3d594ada51a21cc02b18739ab578a1984f900c8a
+  Moya-ModelMapper: 9aa8a99cb664a083b376869d6091c1f20d9f171e
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxOptional: e5448d3e21024489e07c31f6a262f2b50c975367
+  RxSwift: e49536837d9901277638493ea537394d4b55f570
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
+
+PODFILE CHECKSUM: cbeb1faf5f8fe575e85abed39e731073881ae690
+
+COCOAPODS: 1.4.0
